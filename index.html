@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Meena Digital Hub — Learn, Earn, Empower. Digital skills, professional services, career opportunities and business guidance.">
+  <meta name="theme-color" content="#06264a">
+  <title>Meena Digital Hub | Learn • Earn • Empower</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--navy:#06264a;--blue:#0876ce;--green:#159447;--mint:#eaf8f1;--ink:#18324d;--muted:#64758a;--white:#fff;--line:#e4edf3;--shadow:0 14px 40px rgba(8,43,75,.09)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"DM Sans",sans-serif;color:var(--ink);background:#fbfdff;line-height:1.6}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}.container{width:min(1160px,92%);margin:auto}
+    .topbar{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}.nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:10px;font-family:Manrope,sans-serif;font-weight:800;color:var(--navy)}.brand img{width:66px;height:58px;object-fit:contain}.brand span{font-size:14px;line-height:1.2}.brand small{display:block;color:var(--green);letter-spacing:2px;font-size:9px;margin-top:4px}.navlinks{display:flex;align-items:center;gap:23px;font-size:13px;font-weight:700}.navlinks a:hover{color:var(--green)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:30px;padding:12px 21px;font-weight:800;font-size:13px;cursor:pointer;background:linear-gradient(110deg,var(--green),#0879bf);color:white;box-shadow:0 8px 18px #0b8c5124}.menu{display:none;background:none;border:0;font-size:25px;color:var(--navy)}
+    .hero{background:linear-gradient(115deg,#eaf8f4 0%,#f5fbff 53%,#e8f4ff 100%);padding:66px 0 58px;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.06fr .94fr;gap:35px;align-items:center}.eyebrow{font-size:11px;letter-spacing:2.5px;color:var(--green);font-weight:800;text-transform:uppercase}.hero h1{font:800 clamp(36px,5vw,60px)/1.08 Manrope,sans-serif;color:var(--navy);margin:12px 0}.hero h1 span{color:var(--green)}.tagline{font:800 20px Manrope;color:#0874b9;letter-spacing:.5px}.hero p{color:#4e647a;max-width:550px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.btn.outline{background:#fff;color:var(--navy);border:1px solid #c7d8e5;box-shadow:none}.hero-art{display:flex;align-items:center;justify-content:center;min-height:300px}.hero-art img{width:min(100%,440px);max-height:360px;object-fit:contain;filter:drop-shadow(0 18px 22px #0b345018)}
+    .quick{margin-top:-1px;background:white;padding:18px 0}.quick-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}.quick a{padding:18px 8px;text-align:center;border:1px solid var(--line);border-radius:14px;background:#fff;transition:.2s}.quick a:hover{transform:translateY(-4px);box-shadow:var(--shadow)}.quick b{display:block;color:var(--navy);font-size:13px}.quick span{font-size:11px;color:var(--muted)}.quick i{font-style:normal;font-size:25px;display:block;margin-bottom:5px}
+    section{padding:68px 0}.section-head{max-width:650px;margin-bottom:28px}.section-head h2{font:800 clamp(27px,3vw,38px)/1.2 Manrope;color:var(--navy);margin:7px 0}.section-head p{color:var(--muted);margin:0}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.card{background:white;border:1px solid var(--line);border-radius:17px;padding:21px;box-shadow:0 7px 24px rgba(9,45,75,.04)}.card .emoji{font-size:28px}.card h3{font:800 17px Manrope;color:var(--navy);margin:9px 0 5px}.card p{font-size:13px;color:var(--muted);margin:0 0 13px}.more{border:0;background:none;color:#0878b9;font-size:12px;font-weight:800;padding:0;cursor:pointer}.details{display:none;border-top:1px solid var(--line);padding-top:12px;margin-top:13px;color:#50667b;font-size:12px}.card.open .details{display:block}.card.open .more:after{content:" −"} .more:after{content:" +"}
+    .soft{background:#f0faf5}.services-grid{grid-template-columns:repeat(5,1fr)}.investment{background:linear-gradient(105deg,#05294c,#087e68);color:white}.investment .section-head h2,.investment .section-head p{color:white}.investment .eyebrow{color:#8ee0b2}.investment .card{background:#ffffff0e;border-color:#ffffff28;color:white;box-shadow:none}.investment .card h3,.investment .card p{color:white}.investment .details{color:#e1f2ed;border-color:#ffffff35}
+    .jobs-layout{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:stretch}.job-feature{background:linear-gradient(135deg,#e9f8f1,#eef7ff);border:1px solid var(--line);border-radius:18px;padding:28px}.job-feature h3{font:800 23px Manrope;color:var(--navy);margin:8px 0}.fee{font:800 30px Manrope;color:var(--green);margin:12px 0}.job-list{display:grid;grid-template-columns:1fr 1fr;gap:12px}.job-list .card{padding:18px}.notice{font-size:12px;color:var(--muted);margin-top:12px}
+    .about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:35px;align-items:center}.ceo-mark{background:linear-gradient(145deg,#e8f5ff,#e9f8ef);border-radius:22px;padding:25px;text-align:center}.ceo-mark img{width:100%;max-width:260px;max-height:230px;object-fit:contain}.ceo-copy h2{font:800 32px Manrope;color:var(--navy);margin:8px 0}.ceo-copy p{color:var(--muted)}.stats{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}.stat{background:#fff;border:1px solid var(--line);padding:12px 17px;border-radius:12px}.stat b{display:block;color:var(--green);font:800 22px Manrope}.stat span{font-size:11px;color:var(--muted)}
+    .community{background:#effaf4;text-align:center}.community h2{font:800 32px Manrope;color:var(--navy);margin:8px 0}.community p{color:var(--muted);max-width:620px;margin:0 auto 20px}
+    .contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:28px}.contact-panel{background:var(--navy);color:white;padding:27px;border-radius:18px}.contact-panel h3{font:800 22px Manrope;margin-top:0}.contact-panel p{color:#d1dfec;font-size:13px}.contact-line{padding:10px 0;border-bottom:1px solid #ffffff24;font-size:13px}.contact-line b{display:block;color:#9de0b8;font-size:11px;letter-spacing:1px}.form-panel{background:white;border:1px solid var(--line);border-radius:18px;padding:27px;box-shadow:var(--shadow)}.form-panel h3{font:800 22px Manrope;color:var(--navy);margin:0 0 5px}.form-panel>p{font-size:13px;color:var(--muted);margin-top:0}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px}.field{display:flex;flex-direction:column;gap:5px}.field.full{grid-column:1/-1}.field label{font-size:12px;font-weight:800;color:#38536d}.field input,.field select,.field textarea{border:1px solid #d8e4ed;border-radius:10px;padding:11px 12px;background:#fbfdff;outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:#159447}.field textarea{min-height:90px;resize:vertical}.form-note{font-size:11px;color:var(--muted);margin:12px 0}
+    footer{background:#041d38;color:#d5e1ed;padding:35px 0 18px}.footer-row{display:flex;justify-content:space-between;gap:25px;align-items:center}.footer-brand{display:flex;align-items:center;gap:12px}.footer-brand img{width:65px;height:60px;object-fit:contain;background:#fff;border-radius:10px}.footer-brand b{font:800 16px Manrope}.footer-brand small{display:block;color:#9de0b8}.footer-links{display:flex;gap:17px;flex-wrap:wrap;font-size:12px}.copyright{border-top:1px solid #ffffff20;margin-top:24px;padding-top:15px;font-size:11px;color:#a8bacb;display:flex;justify-content:space-between;gap:10px}
+    @media(max-width:900px){.navlinks{gap:12px}.cards{grid-template-columns:repeat(2,1fr)}.services-grid{grid-template-columns:repeat(3,1fr)}.quick-grid{grid-template-columns:repeat(3,1fr)}}
+    @media(max-width:680px){.nav{height:68px}.menu{display:block}.navlinks{display:none;position:absolute;left:0;right:0;top:68px;background:white;padding:18px 5%;box-shadow:var(--shadow);flex-direction:column;align-items:flex-start}.navlinks.show{display:flex}.nav-cta{display:none}.hero{padding:42px 0}.hero-grid,.about-grid,.jobs-layout,.contact-grid{grid-template-columns:1fr}.hero-art{min-height:190px}.hero-art img{max-height:220px}.quick-grid{grid-template-columns:repeat(2,1fr)}section{padding:48px 0}.cards,.services-grid{grid-template-columns:repeat(2,1fr)}.job-list{grid-template-columns:1fr 1fr}.footer-row,.copyright{flex-direction:column;align-items:flex-start}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}}
+    @media(max-width:390px){.cards,.services-grid,.job-list{grid-template-columns:1fr}.quick-grid{grid-template-columns:1fr 1fr}}
+  </style>
+</head>
+<body>
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="#home"><img src="assets/mdh-logo.png" alt="Meena Digital Hub logo"><span>MEENA DIGITAL HUB<small>LEARN • EARN • EMPOWER</small></span></a>
+    <button class="menu" aria-label="Open navigation" onclick="document.querySelector('.navlinks').classList.toggle('show')">☰</button>
+    <nav class="navlinks">
+      <a href="#home">Home</a><a href="#courses">Courses</a><a href="#services">Services</a><a href="#investment">Investment</a><a href="#jobs">Work</a><a href="#business">Business</a><a href="#community">Sharing</a><a href="#about">About</a>
+    </nav>
+    <a class="nav-cta" href="#join">Sign Up Now ↗</a>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div><div class="eyebrow">Welcome to your digital future</div>
+      <h1>Meena Digital Hub</h1><div class="tagline">Learn <span style="color:#159447">• Earn</span> • Empower</div>
+      <p>Your complete digital platform for learning, earning and growing. Build practical skills, explore professional services, discover work opportunities and get guidance for your business journey.</p>
+      <div class="hero-actions"><a class="btn" href="#courses">Explore Courses →</a><a class="btn outline" href="#about">Meet Our CEO</a></div>
+    </div>
+    <div class="hero-art"><img src="assets/mdh-logo.png" alt="MDH — Learn, Earn, Empower"></div>
+  </div>
+</section>
+
+<div class="quick"><div class="container quick-grid">
+  <a href="#courses"><i>📘</i><b>Courses</b><span>Learn New Skills</span></a>
+  <a href="#services"><i>⚙️</i><b>Services</b><span>Professional Help</span></a>
+  <a href="#investment"><i>📈</i><b>Investment</b><span>Learn & Plan</span></a>
+  <a href="#jobs"><i>💼</i><b>Work</b><span>Explore Opportunities</span></a>
+  <a href="#business"><i>🏪</i><b>Business</b><span>Start & Grow</span></a>
+  <a href="#community"><i>🤝</i><b>Sharing</b><span>Knowledge & Support</span></a>
+</div></div>
+
+<section id="courses"><div class="container">
+  <div class="section-head"><div class="eyebrow">Our Courses</div><h2>Learn In-Demand Skills</h2><p>Practical, skill-focused learning to help you build confidence and prepare for digital opportunities. Tap “Learn more” on a course to see its details.</p></div>
+  <div class="cards">
+    <article class="card"><div class="emoji">🎨</div><h3>Graphic Designing</h3><p>Create designs that communicate and sell.</p><button class="more" onclick="toggleCard(this)">Learn more</button><div class="details">Learn design fundamentals, colour and typography, social media posts, flyers, branding and portfolio creation using accessible design tools. Suitable for beginners.</div></article>
+    <article class="card"><div class="emoji">🛒</div><h3>E-Commerce</h3><p>Build, manage and grow online stores.</p><button class="more" onclick="toggleCard(this)">Learn more</button><div class="details">Explore store setup, product research, product listings, order handling, customer support, store operations and basic e-commerce marketing.</div></article>
+    <article class="card"><div class="emoji">📊</div><h3>Forex Trading</h3><p>Understand markets, risk and discipline.</p><button class="more" onclick="toggleCard(this)">Learn more</button><div class="details">Study forex basics, chart reading, technical analysis, trading plans, position sizing and risk management. Trading involves substantial risk; training does not guarantee profits.</div></article>
+    <article class="card"><div class="emoji">💻</div><h3>Freelancing</h3><p>Turn skills into online services.</p><button class="more" onclick="toggleCard(this)">Learn more</button><div class="details">Learn how to choose a service, create a portfolio, write proposals, communicate with clients, set prices and manage freelance projects.</div></article>
+  </div>
+  <p class="form-note">For current course fees, batches and enrolment, contact MDH on WhatsApp. Course fees are shared before registration.</p>
+  <a class="btn" href="https://wa.me/923176549414?text=Assalam-o-Alaikum%2C%20I%20want%20to%20know%20about%20MDH%20courses%20and%20fees." target="_blank" rel="noopener">Ask About Course Fees on WhatsApp</a>
+</div></section>
+
+<section class="soft" id="services"><div class="container">
+  <div class="section-head"><div class="eyebrow">Our Services</div><h2>Professional Digital Services</h2><p>We help individuals and businesses strengthen their online presence and manage everyday digital tasks.</p></div>
+  <div class="cards services-grid">
+    <article class="card"><div class="emoji">🖌️</div><h3>Graphic Designing</h3><p>Visuals for your brand.</p><button class="more" onclick="toggleCard(this)">Explore service</button><div class="details">Social media posts, flyers, banners, thumbnails, brand identity and promotional creatives.</div></article>
+    <article class="card"><div class="emoji">📱</div><h3>Social Media Management</h3><p>Grow your online presence.</p><button class="more" onclick="toggleCard(this)">Explore service</button><div class="details">Content calendars, post scheduling, page management, captions and audience engagement support.</div></article>
+    <article class="card"><div class="emoji">🌐</div><h3>Website Development</h3><p>Modern, responsive websites.</p><button class="more" onclick="toggleCard(this)">Explore service</button><div class="details">Business landing pages, portfolio websites, basic business websites and website updates.</div></article>
+    <article class="card"><div class="emoji">✍️</div><h3>Content Writing</h3><p>Clear and engaging content.</p><button class="more" onclick="toggleCard(this)">Explore service</button><div class="details">Website copy, product descriptions, social captions, blogs and promotional content.</div></article>
+    <article class="card"><div class="emoji">🧑‍💼</div><h3>Virtual Assistance</h3><p>Reliable remote support.</p><button class="more" onclick="toggleCard(this)">Explore service</button><div class="details">Data entry, online research, document formatting, inbox support and routine admin tasks.</div></article>
+  </div>
+</div></section>
+
+<section class="investment" id="investment"><div class="container">
+  <div class="section-head"><div class="eyebrow">Our Investment & Financial Learning</div><h2>Make Informed Financial Decisions</h2><p>Build your understanding before making financial decisions. MDH focuses on education, planning and general guidance — not guaranteed returns.</p></div>
+  <div class="cards">
+    <article class="card"><div class="emoji">📚</div><h3>Financial Education</h3><p>Understand the basics.</p><button class="more" onclick="toggleCard(this)">Learn more</button><div class="details">Learn about budgeting, saving, financial terminology, risk and the difference between investment options.</div></article>
+    <article class="card"><div class="emoji">🗓️</div><h3>Smart Planning</h3><p>Set realistic goals.</p><button class="more" onclick="toggleCard(this)">Learn more</button><div class="details">Explore goal setting, time horizons, budgeting and how to assess whether a financial decision suits your circumstances.</div></article>
+    <article class="card"><div class="emoji">🧭</div><h3>Guidance</h3><p>Learn how to assess options.</p><button class="more" onclick="toggleCard(this)">Learn more</button><div class="details">General educational guidance to help you ask better questions and understand risk. This is not personalised financial advice.</div></article>
+    <article class="card"><div class="emoji">🔎</div><h3>Multiple Options</h3><p>Know the choices and risks.</p><button class="more" onclick="toggleCard(this)">Learn more</button><div class="details">Understand common financial products and their risks. Verify providers, fees and regulations independently before investing.</div></article>
+  </div>
+</div></section>
+
+<section id="jobs"><div class="container">
+  <div class="section-head"><div class="eyebrow">Our Opportunities</div><h2>Find Your Work</h2><p>Explore skill-based work pathways and training opportunities. Read the requirements carefully before applying.</p></div>
+  <div class="jobs-layout">
+    <div class="job-feature"><div class="eyebrow">MDH Training-to-Work Program</div><h3>Learn a Skill. Complete Training. Start Practical Work.</h3><div class="fee">PKR 3,000 <span style="font-size:13px;color:#587087">training / enrolment fee</span></div><p>Applicants first register and pay the disclosed PKR 3,000 training fee. MDH then provides the relevant training. After successful completion and assessment, suitable practical work assignments are provided according to skill level and available projects.</p><a class="btn" href="#join">Apply for This Program →</a><p class="notice">Important: This is a paid training pathway, not a guaranteed salaried job. Work allocation depends on successful training completion, assessment and available client projects. Confirm the course outline, duration, payment terms and work conditions with MDH before paying.</p></div>
+    <div class="job-list">
+      <article class="card"><div class="emoji">🏠</div><h3>Remote Jobs</h3><p>Explore work-from-home roles and remote support tasks.</p></article>
+      <article class="card"><div class="emoji">🌍</div><h3>Online Work</h3><p>Build practical experience through digital projects.</p></article>
+      <article class="card"><div class="emoji">🧑‍💻</div><h3>Freelancing</h3><p>Offer services to clients and grow a portfolio.</p></article>
+      <article class="card"><div class="emoji">⏰</div><h3>Part-Time Jobs</h3><p>Look for flexible opportunities that fit your schedule.</p></article>
+      <article class="card" style="grid-column:1/-1"><div class="emoji">🎯</div><h3>Skill-Based Opportunities</h3><p>Opportunities may include design, e-commerce support, content, admin and digital marketing tasks, subject to project availability.</p></article>
+    </div>
+  </div>
+</div></section>
+
+<section class="soft" id="business"><div class="container">
+  <div class="section-head"><div class="eyebrow">Our Business Support</div><h2>Build Your Business</h2><p>Turn your idea into a practical plan. Explore support for starting, managing and growing an online business.</p></div>
+  <div class="cards">
+    <article class="card"><div class="emoji">🛍️</div><h3>E-Commerce Store Setup</h3><p>Get started with an online store.</p><button class="more" onclick="toggleCard(this)">Learn more</button><div class="details">Guidance on store structure, product categories, listings, customer journey and launch preparation.</div></article>
+    <article class="card"><div class="emoji">📦</div><h3>Digital Products</h3><p>Create and sell digital resources.</p><button class="more" onclick="toggleCard(this)">Learn more</button><div class="details">Explore digital product ideas, simple product creation, presentation and online selling basics.</div></article>
+    <article class="card"><div class="emoji">📣</div><h3>Brand Building & Marketing</h3><p>Build a recognisable brand.</p><button class="more" onclick="toggleCard(this)">Learn more</button><div class="details">Brand positioning, visual identity, social media strategy, promotional content and audience development.</div></article>
+    <article class="card"><div class="emoji">🧩</div><h3>Business Guidance</h3><p>Plan your next steps.</p><button class="more" onclick="toggleCard(this)">Learn more</button><div class="details">Idea validation, customer research, service packaging, pricing basics and action planning.</div></article>
+  </div>
+</div></section>
+
+<section id="about"><div class="container about-grid">
+  <div class="ceo-mark"><img src="assets/mdh-logo.png" alt="MDH logo"></div>
+  <div class="ceo-copy"><div class="eyebrow">Meet Our CEO</div><h2>Rameen Ishfaq</h2><p><b>Founder & CEO, Meena Digital Hub</b></p>
+    <p>Rameen Ishfaq is an optometrist and LHV-qualified professional with a strong interest in digital learning, entrepreneurship and online business. She brings 7 years of experience working in the online field, along with 5 years of trading experience. Through MDH, her vision is to help people learn practical skills, explore responsible earning opportunities and move towards a more confident digital future.</p>
+    <div class="stats"><div class="stat"><b>7 Years</b><span>Online field experience</span></div><div class="stat"><b>5 Years</b><span>Trading experience</span></div></div>
+  </div>
+</div></section>
+
+<section class="community" id="community"><div class="container"><div class="eyebrow">Sharing • Learning • Growing</div><h2>Join the MDH Community</h2><p>Stay connected for learning resources, updates, useful opportunities and community announcements.</p><a class="btn" href="https://whatsapp.com/channel/0029VbD4TWd72WTsVbPXIk3C" target="_blank" rel="noopener">Join WhatsApp Channel ↗</a></div></section>
+
+<section id="join"><div class="container">
+  <div class="section-head"><div class="eyebrow">Get in Touch</div><h2>Join Meena Digital Hub</h2><p>Complete the form and tell us what you are interested in. Our team can contact you with the next steps.</p></div>
+  <div class="contact-grid">
+    <div class="contact-panel"><h3>Let's Connect</h3><p>For course fees, service quotations, training details and registration support, contact MDH directly.</p>
+      <div class="contact-line"><b>WHATSAPP</b><a href="https://wa.me/923176549414" target="_blank" rel="noopener">0317 6549414</a></div>
+      <div class="contact-line"><b>EMAIL</b><a href="mailto:meenadigitalhub683@gmail.com">meenadigitalhub683@gmail.com</a></div>
+      <div class="contact-line"><b>PAYMENT METHOD</b>Bank of Punjab (BOP) bank transfer<br><small>Request verified account details directly from MDH on WhatsApp before making a payment.</small></div>
+      <div class="contact-line"><b>WHATSAPP COMMUNITY</b><a href="https://whatsapp.com/channel/0029VbD4TWd72WTsVbPXIk3C" target="_blank" rel="noopener">Join our channel ↗</a></div>
+    </div>
+    <div class="form-panel"><h3>Sign Up Now</h3><p>Fields marked * are required.</p>
+      <form name="mdh-join-form" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="mdh-join-form">
+        <p style="display:none"><label>Do not fill this out: <input name="bot-field"></label></p>
+        <div class="form-grid">
+          <div class="field"><label for="name">Full Name *</label><input id="name" name="name" required placeholder="Your full name"></div>
+          <div class="field"><label for="phone">WhatsApp Number *</label><input id="phone" name="phone" required type="tel" placeholder="03xx xxxxxxx"></div>
+          <div class="field"><label for="email">Email Address</label><input id="email" name="email" type="email" placeholder="you@example.com"></div>
+          <div class="field"><label for="interest">I am interested in *</label><select id="interest" name="interest" required><option value="">Select an option</option><option>Graphic Designing Course</option><option>E-Commerce Course</option><option>Forex Trading Course</option><option>Freelancing Course</option><option>Digital Services</option><option>Investment Education</option><option>Training-to-Work Program (PKR 3,000)</option><option>Business Guidance</option><option>Other</option></select></div>
+          <div class="field full"><label for="message">Message / Your Questions</label><textarea id="message" name="message" placeholder="Tell us a little about what you need..."></textarea></div>
+          <div class="field full"><button class="btn" type="submit">Submit Registration ↗</button></div>
+        </div>
+        <p class="form-note">This form is configured for Netlify Forms. After deploying this folder to Netlify, submissions will appear in your Netlify site dashboard under Forms. If you preview the site locally, the form will not submit.</p>
+      </form>
+    </div>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="container">
+  <div class="footer-row"><div class="footer-brand"><img src="assets/mdh-logo.png" alt="MDH"><div><b>MEENA DIGITAL HUB</b><small>Learn • Earn • Empower</small></div></div>
+    <div class="footer-links"><a href="#courses">Courses</a><a href="#services">Services</a><a href="#investment">Investment</a><a href="#jobs">Work</a><a href="#business">Business</a><a href="#join">Contact</a></div>
+  </div>
+  <div class="copyright"><span>© 2026 Meena Digital Hub. All rights reserved.</span><span>Learn • Earn • Empower</span></div>
+</div></footer>
+<script>
+  function toggleCard(button){const card=button.closest('.card');card.classList.toggle('open');button.textContent=card.classList.contains('open')?'Show less':'Learn more';}
+  document.querySelectorAll('.navlinks a').forEach(a=>a.addEventListener('click',()=>document.querySelector('.navlinks').classList.remove('show')));
+</script>
+</body>
+</html>
